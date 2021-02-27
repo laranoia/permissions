@@ -33,6 +33,6 @@ class PermissionManager
     }
 
     public function hasAbility(string $ability){
-        return $this->user->currentRole->hasAbility($ability);
+        return $this->user->hasAbility($ability);
     }
 }
